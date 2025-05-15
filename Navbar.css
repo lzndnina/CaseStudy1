@@ -1,0 +1,82 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 190px;
+  height: 100%;
+  background-color: #98a66d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(0); /* Always visible */
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-logo {
+  width: 140px;
+  height: 140px;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.sidebar-nav {
+  width: 100%;
+}
+
+.sidebar-user-role {
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-logout {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.sidebar-logout:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
